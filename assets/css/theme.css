@@ -4,13 +4,13 @@
 
 :root {
   --bs-body-bg: #0f0f0f;
-  --bs-body-color: #670707;
+  --bs-body-color: #ffffff;
   --bs-primary: #670707;
   --bs-primary-rgb: #000000;
 
   /* Custom tokens */
-  --color-bg-alt: #1a1a1a;
-  --color-muted: #6c757d;
+  --color-bg-alt: #000000;
+  --color-muted: #000000;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
