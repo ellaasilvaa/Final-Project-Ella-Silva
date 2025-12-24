@@ -27,9 +27,3 @@
   background: var(--bs-primary);
   transition: width 0.3s, left 0.3s;
 }
-
-.nav-link:hover::after,
-.nav-link.active::after {
-  width: 100%;
-  left: 0;
-}
