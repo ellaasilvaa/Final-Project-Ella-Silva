@@ -1,0 +1,276 @@
+/* mobile.css - Mobile-specific fixes and overrides */
+
+/* Fix the viewport and container width issues */
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+}
+
+.container {
+  max-width: 100% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* Mobile Navigation - FIX BURGER MENU VISIBILITY */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 1rem 0 !important;
+    width: 100% !important;
+  }
+
+  .navbar .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .navbar-brand {
+    font-size: 0.9rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .navbar-toggler {
+    display: block !important;
+    margin-left: auto !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .navbar-collapse {
+    background-color: #ffffff !important;
+    padding: 1rem 0 !important;
+    margin-top: 1rem !important;
+    border-top: 1px solid var(--border-color) !important;
+    width: 100% !important;
+  }
+
+  .nav-link {
+    padding: 0.75rem 0 !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* FIX NAVBAR WIDTH AND BURGER MENU */
+  .navbar {
+    padding: 0.75rem 0 !important;
+    background-color: #ffffff !important;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+  }
+
+  .navbar .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 1rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .navbar-toggler {
+    display: block !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 1.25rem !important;
+    margin-left: 1rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* HERO SECTION - CENTER TITLE IN MIDDLE OF SCREEN */
+  .hero {
+    padding: 0 !important;
+    margin-top: 60px !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100vw !important;
+    position: relative !important;
+  }
+
+  .hero .container {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 100vh !important;
+  }
+
+  .hero-content {
+    text-align: center !important;
+    width: 100% !important;
+    padding: 2rem 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    color: #ffffff !important;
+    order: 1 !important;
+  }
+  .hero-subtitle {
+    font-size: 0.75rem !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    order: 2 !important;
+  }
+
+  /* IMAGE SECTION */
+  .image-section {
+    padding: 0 !important;
+    width: 100vw !important;
+  }
+
+  .image-section .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .image-section img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* ABOUT SECTION */
+  .about-section {
+    padding: 3rem 0 !important;
+    width: 100vw !important;
+  }
+
+  .about-content {
+    padding: 0 1.5rem !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .section-label {
+    font-size: 0.7rem !important;
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+  }
+
+  .about-text {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+  }
+
+/* Mobile - square images */
+@media (max-width: 767px) {
+  .projects-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3rem !important;
+    padding: 0 1rem !important;
+  }
+  
+  .project-card,
+  .project-card--large {
+    width: 100% !important;
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  .project-card img,
+  .project-card--large img {
+    width: 100% !important;
+    height: 100vw !important;
+    max-height: 500px !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .project-card h3,
+  .project-card--large h3 {
+    margin-top: 1rem !important;
+    color: #ffffff !important;
+    font-size: 1.25rem !important;
+    padding: 0 !important;
+  }
+}
+  }
+
+  /* CONTACT SECTION */
+  .contact-section {
+    padding: 3rem 1.5rem !important;
+    text-align: center !important;
+    width: 100vw !important;
+  }
+
+  .contact-title {
+    font-size: 1.75rem !important;
+    text-align: center !important;
+  }
+
+  .lead {
+    font-size: 0.95rem !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+
+
+  .social-links {
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+    justify-content: center !important;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2rem 1rem !important;
+    text-align: center !important;
+    width: 100vw !important;
+  }
+
+  footer p {
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+}
+
+/* SMALL SCREENS */
+@media (max-width: 575px) {
+  .navbar-brand {
+    font-size: 0.8rem !important;
+  }
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-description {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* EXTRA SMALL SCREENS */
+@media (max-width: 375px) {
+  .navbar-brand {
+    font-size: 0.75rem !important;
+  }
+
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+}
