@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <img
-      src="/Users/ellasilva/Desktop/WEB FINAL/Final-Project-Ella-Silva/assets/images/waves.jpg"
-      alt="train bg"
-      class="bg-image"
+      src="assets/images/bubble.jpg"
+      alt=""
+      class="bg-image bg-image--active"
+      id="bgImage1"
     />
+
+    <img src="assets/images/train.jpg" alt="" class="bg-image" id="bgImage2" />
+
     <title>Ella Silva — Multimedia & Graphic Designer</title>
     <meta
       name="description"
@@ -32,8 +36,8 @@
     <link rel="stylesheet" href="./assets/css/index.css" />
     <script src="./assets/js/main.js" defer></script>
   </head>
+  <script src="main.js"></script>
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
-    <!-- Navigation -->
     <!-- Navigation -->
     <nav
       id="navbar"
@@ -99,14 +103,14 @@
                 class="container position-relative z-1 text-center text-white"
               >
                 <p class="about-text">
-                  This is the About Section Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum
+                  This is the About Section. A mini introduction about who you
+                  are, what you like to do and more. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident.
                 </p>
               </div>
             </div>
@@ -114,108 +118,25 @@
         </div>
       </section>
 
-      <!-- Projects Section -->
       <section id="projects" class="projects-section">
         <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold gsap-reveal">Featured Projects</h2>
-            <p class="lead text-muted gsap-reveal">
-              A selection of my recent work
-            </p>
-          </div>
+          <h2 class="projects-title">Featured Projects</h2>
+          <p class="projects-subtitle">A selection of my recent work</p>
 
-          <!-- project cards here -->
-        </div>
-   
+          <div class="projects-grid">
+            <!-- Large project -->
+            <article class="project-card project-card--large">
+              <img src="assets/images/landscape.jpeg" alt="Project 01" />
+              <h3>Project 01</h3>
+            </article>
 
-      <div class="row g-4">
-        <!-- Project Card 1 -->
-        <div class="col-md-6 col-lg-4">
-          <article class="card project-card h-100 border-0 shadow-sm">
-            <div class="card-img-wrapper overflow-hidden">
-              <img
-                src="https://picsum.photos/400/300?random=1"
-                class="card-img-top"
-                alt="E-commerce Platform"
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title h5">E-commerce Platform</h3>
-              <p class="card-text text-muted small">
-                Full-stack e-commerce solution with real-time inventory and
-                Stripe integration.
-              </p>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-primary-subtle text-primary">React</span>
-                <span class="badge bg-primary-subtle text-primary"
-                  >Node.js</span
-                >
-                <span class="badge bg-primary-subtle text-primary"
-                  >MongoDB</span
-                >
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Project Card 2 -->
-        <div class="col-md-6 col-lg-4">
-          <article class="card project-card h-100 border-0 shadow-sm">
-            <div class="card-img-wrapper overflow-hidden">
-              <img
-                src="https://picsum.photos/400/300?random=2"
-                class="card-img-top"
-                alt="Dashboard UI"
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title h5">Analytics Dashboard</h3>
-              <p class="card-text text-muted small">
-                Real-time data visualization with interactive charts and dark
-                mode.
-              </p>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-primary-subtle text-primary">D3.js</span>
-                <span class="badge bg-primary-subtle text-primary"
-                  >WebSocket</span
-                >
-                <span class="badge bg-primary-subtle text-primary">GSAP</span>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="col-md-6 col-lg-4">
-          <article class="card project-card h-100 border-0 shadow-sm">
-            <div class="card-img-wrapper overflow-hidden">
-              <img
-                src="https://picsum.photos/400/300?random=3"
-                class="card-img-top"
-                alt="Mobile App"
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title h5">Fitness Mobile App</h3>
-              <p class="card-text text-muted small">
-                Cross-platform fitness tracker with workout plans and progress
-                analytics.
-              </p>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-primary-subtle text-primary"
-                  >React Native</span
-                >
-                <span class="badge bg-primary-subtle text-primary"
-                  >Firebase</span
-                >
-              </div>
-            </div>
-          </article>
-        </div>
-          
-
-         </section>
-        
+            <!-- Small project -->
+            <article class="project-card">
+              <img src="assets/images/huevo.jpeg" alt="Project 02" />
+              <h3>Project 02</h3>
+            </article>
+ </div>
+      </section>
 
       <!-- Contact Section -->
       <section id="contact" class="py-5 py-lg-6 bg-dark">
