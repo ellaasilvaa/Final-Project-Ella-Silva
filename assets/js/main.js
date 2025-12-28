@@ -2,7 +2,7 @@ const images = [
   "assets/images/bubble.jpg",
   "assets/images/stufftable.jpeg",
   "assets/images/japan.jpg",
-  "assets/images/waves.jpg",
+  "assets/images/landscape.jpeg",
 ];
 
 let index = 0;

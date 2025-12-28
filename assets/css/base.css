@@ -11,14 +11,15 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: transparent;
 }
 
 body {
   font-family: var(--font-serif);
   line-height: 1.6;
   color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
+  margin: 0;
+  padding: 0;
+  background: transparent;
 }
 
 img {
@@ -70,4 +71,9 @@ p {
   font-size: 1.125rem;
   line-height: 1.8;
   color: var(--text-secondary);
+}
+
+.backdrop {
+  background-color: #000000;
+  color: #ffffff;
 }

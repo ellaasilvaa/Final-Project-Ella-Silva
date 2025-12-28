@@ -84,7 +84,7 @@ body {
     flex-shrink: 0 !important;
   }
 
-  /* HERO SECTION - CENTER TITLE IN MIDDLE OF SCREEN */
+  /* HERO SECTION  */
   .hero {
     padding: 0 !important;
     margin-top: 60px !important;
@@ -169,6 +169,8 @@ body {
     font-size: 1rem !important;
     line-height: 1.7 !important;
     margin-bottom: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
     text-align: center !important;
   }
 

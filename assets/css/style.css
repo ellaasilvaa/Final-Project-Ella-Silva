@@ -2,26 +2,31 @@
    4. Hero Section
    -------------------------------------------------------------------------- */
 
-body {
-  background-color: #000000 !important;
-  margin: 0;
-  padding: 0;
-}
-.hero {
+main {
   background: transparent;
 }
 
+.hero {
+  background: transparent;
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+}
+
 .hero-bg {
-  background: white;
+  background: transparent;
   z-index: 0;
 }
+
 .hero-title {
   letter-spacing: -0.03em;
   font-size: 2rem;
+  color: #ffffff;
 }
 
 .hero-subtitle {
   opacity: 0.8;
+  color: #ffffff;
 }
 
 .bg-image {
@@ -31,9 +36,8 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 4s ease-in-out;
 }
 
 .bg-image--active {
@@ -91,6 +95,11 @@ body {
   color: var(--bs-body-color);
   margin-top: 4rem;
   margin-bottom: 4rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+.work {
+  color: var(--accent-color);
 }
 
 /* --------------------------------------------------------------------------
@@ -100,9 +109,8 @@ body {
 /* SECTION */
 .projects-section {
   background-color: #000;
-  padding: 6rem 2rem;
-  color: #fff;
   padding: 5rem 3rem;
+  color: #fff;
 }
 
 /* TITLE */
@@ -181,7 +189,7 @@ body {
   margin-top: 4rem;
 }
 
-.project-link a {
+.project-link {
   font-size: 1rem;
   color: #ffffff;
   text-decoration: none;
