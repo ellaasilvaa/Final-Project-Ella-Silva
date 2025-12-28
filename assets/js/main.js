@@ -1,7 +1,7 @@
 const images = [
   "assets/images/bubble.jpg",
-  "assets/images/train.jpeg",
-  "assets/images/glass.jpg",
+  "assets/images/stufftable.jpeg",
+  "assets/images/japan.jpg",
   "assets/images/waves.jpg",
 ];
 
