@@ -26,4 +26,4 @@ setInterval(() => {
   const temp = activeImage;
   activeImage = inactiveImage;
   inactiveImage = temp;
-}, 10000);
+}, 5000);
