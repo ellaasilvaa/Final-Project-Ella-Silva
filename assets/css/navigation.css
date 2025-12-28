@@ -17,6 +17,10 @@
   padding: 0.5rem 1rem !important;
 }
 
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
 .nav-link::after {
   content: "";
   position: absolute;

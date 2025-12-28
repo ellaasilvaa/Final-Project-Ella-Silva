@@ -5,8 +5,9 @@
 :root {
   --bs-body-bg: #0f0f0f;
   --bs-body-color: #ffffff;
-  --bs-primary: #670707;
+  --bs-primary: #4b4141;
   --bs-primary-rgb: #000000;
+  --accent-color: #e7f38b;
 
   /* Custom tokens */
   --color-bg-alt: #000000;

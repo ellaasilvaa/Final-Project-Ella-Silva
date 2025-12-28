@@ -173,65 +173,80 @@ body {
   }
 
   /* Mobile - square images */
+
   @media (max-width: 767px) {
     .projects-grid {
-      display: flex !important;
-      flex-direction: column !important;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
       gap: 3rem !important;
-      padding: 0 1rem !important;
     }
+  }
 
-    .project-card,
-    .project-card--large {
-      width: 100% !important;
-      border: none !important;
-      padding: 0 !important;
-      background: transparent !important;
-      box-shadow: none !important;
-    }
+  .project-card,
+  .project-card--large {
+    height: 300px !important;
+    width: 300px !important;
+    min-height: auto !important;
+    position: relative !important;
+  }
 
-    .project-card img,
-    .project-card--large img {
-      width: 100% !important;
-      height: 100vw !important;
-      max-height: 500px !important;
-      object-fit: cover !important;
-      display: block !important;
-      margin-bottom: 0 !important;
-    }
+  .project-card::before,
+  .project-card::after,
+  .project-card--large::before,
+  .project-card--large::after {
+    display: none !important;
+    content: none !important;
+  }
 
-    .project-card h3,
-    .project-card--large h3 {
-      margin-top: 1rem !important;
-      color: #ffffff !important;
-      font-size: 1.25rem !important;
-      padding: 0 !important;
-    }
+  .project-card img,
+  .project-card--large img {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .project-card h3,
+  .project-card--large h3 {
+    margin-top: 0 !important;
   }
 }
 
 /* CONTACT SECTION */
-.contact-section {
-  padding: 3rem 1.5rem !important;
-  text-align: center !important;
-  width: 100vw !important;
-}
+@media (max-width: 768px) {
+  /* Contact section spacing */
+  .contact-section {
+    padding: 3rem 1.5rem;
+  }
 
-.contact-title {
-  font-size: 1.75rem !important;
-  text-align: center !important;
-}
+  /* Title */
+  .contact-title {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
 
-.lead {
-  font-size: 0.95rem !important;
-  padding: 0 !important;
-  text-align: center !important;
-}
+  /* Grid → single column */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0;
+  }
 
-.social-links {
-  gap: 1.5rem !important;
-  margin-top: 2rem !important;
-  justify-content: center !important;
+  /* Columns */
+  .contact-column {
+    text-align: left;
+  }
+
+  /* Headings */
+  .contact-column h4 {
+    font-size: 0.7rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Text */
+  .contact-column p,
+  .contact-column a {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }
 
 /* FOOTER */

@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 .hero {
-  background: rgba(255, 255, 255, 0);
+  background: transparent;
 }
 
 .hero-bg {
@@ -176,18 +176,38 @@ body {
   display: block;
 }
 
+.project-link {
+  text-align: center, right;
+  margin-top: 4rem;
+}
+
+.project-link a {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.25rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.project-link a:hover {
+  color: var(--accent-color);
+  border-bottom-color: #ffffff;
+}
 /* --------------------------------------------------------------------------
    7. Contact Section
    -------------------------------------------------------------------------- */
 .contact-title {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   background: #000000;
 }
+
 .contact-section {
   background-color: #000000;
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .contact-grid {
@@ -235,10 +255,13 @@ body {
    -------------------------------------------------------------------------- */
 .footer-section {
   background-color: #000000;
-  color: var(--bs-body-color);
-  margin-top: 0 !important;
+  color: #ffffff;
   padding-top: 4rem !important;
   padding-bottom: 2rem;
+}
+
+.footer-link a:hover {
+  color: var(--accent-color);
 }
 /* --------------------------------------------------------------------------
    9. Utilities
@@ -252,4 +275,17 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.underlined-link {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.underlined-link:hover {
+  color: var(--accent-color);
+  border-bottom-color: #e7f38b;
 }
